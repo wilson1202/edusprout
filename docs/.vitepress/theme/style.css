@@ -1,0 +1,33 @@
+/**
+ * 首页 hero 右侧的「彩色光晕 + 图片」。
+ *
+ * 图片本身由 index.md 的 hero.image 提供；光晕来自默认主题的 .image-bg 元素，
+ * 它读取下面这三个变量（默认值是 none，所以不写就看不到）。
+ * 数值取自 VitePress 官方文档站自己的 styles.css。
+ */
+:root {
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #bd34fe 30%, #41d1ff);
+
+  /* 光晕的渐变与模糊半径 */
+  --vp-home-hero-image-background-image: linear-gradient(-45deg, #bd34fe 50%, #47caff 50%);
+  --vp-home-hero-image-filter: blur(44px);
+}
+
+@media (min-width: 40rem) {
+  :root {
+    --vp-home-hero-image-filter: blur(56px);
+  }
+}
+
+@media (min-width: 60rem) {
+  :root {
+    --vp-home-hero-image-filter: blur(68px);
+  }
+}
+
+/* 图片自身的投影与内边距（官方同样写法） */
+.VPHero .VPImage {
+  filter: drop-shadow(-2px 4px 6px rgba(0, 0, 0, 0.2));
+  padding: 1.125rem;
+}

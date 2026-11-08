@@ -1,0 +1,10 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "types": [
+      "vitepress-tuck/client-types",
+      "./node_modules/.vite/components.d.ts"
+    ]
+  },
+  "include": [".vitepress/config.ts", ".vitepress/theme", ".vitepress/navbar.ts", ".vitepress/collections.ts"]
+}

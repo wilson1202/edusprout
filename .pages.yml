@@ -21,16 +21,13 @@ content:
     subfolders: false
     filename: "{year}-{month}-{day}-{hour}{minute}{second}-{fields.slug}.md"
     view:
-      primary: title
-      sort: [date, title]
+      primary: name
+      fields: [name, date, slug, level, pinned]
+      sort: [date]
       default:
         sort: date
         order: desc
     fields:
-      - name: title
-        label: 标题
-        type: string
-        required: true
       - name: slug
         label: 网址短名
         type: select
@@ -62,3 +59,5 @@ content:
       - name: body
         label: 正文
         type: rich-text
+        required: true
+        description: 请在正文第一行填写一级标题。在可视化编辑器中选择“一级标题”，或在 Source 中输入“# 公告标题”；网站将用它作为公告标题。

@@ -25,13 +25,11 @@ import video from 'vitepress-plugin-video'
 
 import groupIcons from './group-icons.ts'
 import llmstxt from './llmstxt.ts'
-import noticeTitle from './notice-title.ts'
 import ssrNoExternal from './ssr-no-external.ts'
 
 export const plugins: VitepressPlugin[] = [
   // SSR 外置规则（见文件内注释），必须排在最前，供其余插件生效。
   ssrNoExternal(),
-  noticeTitle(),
   // 与上游文档站一致，通过 tuck 封装外部插件。
   llmstxt(),
   groupIcons(),

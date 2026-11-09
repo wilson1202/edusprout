@@ -1,5 +1,4 @@
 ---
-title: 公告功能测试
 date: '2026-11-09'
 level: info
 pinned: false

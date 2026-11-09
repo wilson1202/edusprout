@@ -60,6 +60,6 @@ export const collections: VitePressSidebarOptions[] = [
     scanStartPath: 'notices',
     resolvePath: '/notices/',
     basePath: '/notices/',
-    useTitleFromFrontmatter: true,
+    useTitleFromFrontmatter: false,
   },
 ]

@@ -24,29 +24,34 @@ export const collections: VitePressSidebarOptions[] = [
     ...sidebarBase,
     scanStartPath: 'course/chinese',
     resolvePath: '/course/chinese/',
+    basePath: '/course/chinese/',
   },
   // 数学：整棵树，层级不限
   {
     ...sidebarBase,
     scanStartPath: 'course/math',
     resolvePath: '/course/math/',
+    basePath: '/course/math/',
   },
   // 英语：整棵树，层级不限
   {
     ...sidebarBase,
     scanStartPath: 'course/english',
     resolvePath: '/course/english/',
+    basePath: '/course/english/',
   },
   // 分享：整棵树，层级不限
   {
     ...sidebarBase,
     scanStartPath: 'share',
     resolvePath: '/share/',
+    basePath: '/share/',
   },
   // 其他：整棵树，层级不限
   {
     ...sidebarBase,
     scanStartPath: 'other',
     resolvePath: '/other/',
+    basePath: '/other/',
   },
 ]

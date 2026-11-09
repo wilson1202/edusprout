@@ -21,18 +21,17 @@ content:
     subfolders: false
     filename: "{year}-{month}-{day}-{hour}{minute}{second}-{fields.slug}.md"
     view:
-      primary: name
-      fields: [name, date, slug, level, pinned]
+      primary: body
+      fields: [body, date, slug, level, pinned]
       sort: [date]
       default:
         sort: date
         order: desc
     fields:
       - name: slug
-        label: 网址短名
+        label: 类别
         type: select
         required: true
-        description: 选择公告类别，用于新公告文件名，例如 2026-11-09-143025-homework.md。修改已有公告的选项不会自动重命名文件。
         options:
           values:
             - { value: homework, label: 作业 }

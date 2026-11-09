@@ -19,7 +19,7 @@ content:
     exclude: [index.md]          # 列表页不进公告集合
     format: yaml-frontmatter     # 注意：不是 md，官方可选值里没有 md
     subfolders: false
-    filename: "{year}-{month}-{day}-{primary}.md"
+    filename: "{year}-{month}-{day}-{fields.slug}.md"
     view:
       primary: title
       sort: [date, title]
@@ -31,6 +31,14 @@ content:
         label: 标题
         type: string
         required: true
+      - name: slug
+        label: 网址短名
+        type: string
+        required: true
+        description: 例如 homework，仅使用小写英文字母、数字和连字符。用于新公告文件名；修改已有公告的短名不会自动重命名文件。
+        pattern:
+          regex: "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+          message: 请填写小写英文字母、数字和连字符，例如 homework 或 weekly-update。
       - name: date
         label: 日期
         type: date

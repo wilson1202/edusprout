@@ -19,4 +19,5 @@ export const navbar: DefaultTheme.NavItem[] = [
   },
   { text: '分享', link: '/share/' },
   { text: '其他', link: '/other/' },
+  { text: '公告', link: '/notices/' }
 ]

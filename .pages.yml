@@ -1,0 +1,53 @@
+# ===== Pages CMS 配置：放仓库根目录 .pages.yml =====
+# 对照官方文档核对版（2026-11-08）：https://pagescms.org/docs/configuration/
+# 结构按 VitePress 最常见布局：文档在 docs/ 下，公告在 docs/notices/
+# 若你的 index.md 在仓库根目录不在 docs/：把 path 的 docs/ 去掉，media.input 也去掉 docs/
+
+media:
+  input: docs/public/media/notices
+  output: /media/notices
+
+settings:
+  content:
+    merge: true   # 保留 CMS 字段之外的 frontmatter，不被保存时吃掉
+
+content:
+  - name: notices
+    label: 公告
+    type: collection
+    path: docs/notices/2026
+    exclude: [index.md]          # 列表页不进公告集合
+    format: yaml-frontmatter     # 注意：不是 md，官方可选值里没有 md
+    subfolders: false
+    filename: "{year}-{month}-{day}-{primary}.md"
+    view:
+      primary: title
+      sort: [date, title]
+      default:
+        sort: date
+        order: desc
+    fields:
+      - name: title
+        label: 标题
+        type: string
+        required: true
+      - name: date
+        label: 日期
+        type: date
+        required: true
+      - name: level
+        label: 级别
+        type: select
+        default: info
+        options:
+          values:
+            - { value: info, label: 普通 }
+            - { value: warning, label: 警告 }
+            - { value: danger, label: 紧急 }
+      - name: pinned
+        label: 置顶
+        type: boolean
+        default: false
+      - name: body
+        label: 正文
+        type: rich-text

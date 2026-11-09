@@ -54,4 +54,11 @@ export const collections: VitePressSidebarOptions[] = [
     resolvePath: '/other/',
     basePath: '/other/',
   },
+  // 通知：整棵树，层级不限
+  {
+    ...sidebarBase,
+    scanStartPath: 'notices',
+    resolvePath: '/notices/',
+    basePath: '/notices/',
+  },
 ]

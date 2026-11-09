@@ -15,10 +15,10 @@ content:
   - name: notices
     label: 公告
     type: collection
-    path: docs/notices/2026
+    path: docs/notices
     exclude: [index.md]          # 列表页不进公告集合
     format: yaml-frontmatter     # 注意：不是 md，官方可选值里没有 md
-    subfolders: false
+    subfolders: true
     filename: "{year}-{month}-{day}-{hour}{minute}{second}-{fields.slug}.md"
     view:
       primary: body

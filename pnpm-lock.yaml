@@ -169,9 +169,6 @@ importers:
       '@floating-ui/vue':
         specifier: ^2.0.1
         version: 2.0.1(vue@3.5.45(typescript@6.0.3))
-      '@iconify-json/lucide':
-        specifier: ^1.2.151
-        version: 1.2.151
       '@iconify/json':
         specifier: ^2.2.554
         version: 2.2.554
@@ -359,9 +356,6 @@ packages:
 
   '@iconify-json/logos@1.2.19':
     resolution: {integrity: sha512-ICjDNu2RW4xMk+0YAHyrTj/pW2BHgywcYyvf9DS16upalmSUbg+WqkEYJRim8iVOuVylyo9FFjzWLzACFhj8oA==}
-
-  '@iconify-json/lucide@1.2.151':
-    resolution: {integrity: sha512-OCp+cNzynOlOI7zHq8bFGhBBzmSSWFICvOSTxZrajhFJC4YizvlLiBJMbaLzzlpMaGRidmZmAA8GpovoDKiy/w==}
 
   '@iconify-json/simple-icons@1.2.101':
     resolution: {integrity: sha512-MXJkMZDancJ/9I+Bgdthi9kXvn3AwWStxoTHwEPwAFQ9kMLBASO1BSstg52fNtjXeizm1Wi91R+QnWxNGkWHPQ==}
@@ -2400,10 +2394,6 @@ snapshots:
       vue: 3.5.45(typescript@6.0.3)
 
   '@iconify-json/logos@1.2.19':
-    dependencies:
-      '@iconify/types': 2.0.0
-
-  '@iconify-json/lucide@1.2.151':
     dependencies:
       '@iconify/types': 2.0.0
 

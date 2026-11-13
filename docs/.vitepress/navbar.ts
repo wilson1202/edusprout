@@ -8,6 +8,7 @@ import type { DefaultTheme } from 'vitepress'
  */
 export const navbar: DefaultTheme.NavItem[] = [
   { text: '主页', link: '/' },
+  { text: '公告', link: '/notices/' },
   {
     text: '课程',
     activeMatch: '^/course/',
@@ -18,6 +19,5 @@ export const navbar: DefaultTheme.NavItem[] = [
     ],
   },
   { text: '分享', link: '/share/' },
-  { text: '其他', link: '/other/' },
-  { text: '公告', link: '/notices/' }
+  { text: '其他', link: '/other/' }
 ]

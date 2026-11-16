@@ -1,2 +1,7 @@
+# 依赖版本覆盖
+overrides:
+  typescript: 6.0.3
+
+# 最小发布时间豁免列表
 minimumReleaseAgeExclude:
   - 'vitepress-plugin-filelist'

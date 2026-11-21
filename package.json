@@ -47,7 +47,7 @@
     "vitepress-plugin-collapse": "^0.12.2",
     "vitepress-plugin-field": "^0.12.2",
     "vitepress-plugin-file-tree": "^0.12.2",
-    "vitepress-plugin-filelist": "0.13.7",
+    "vitepress-plugin-filelist": "^0.13.7",
     "vitepress-plugin-group-icons": "^1.8.1",
     "vitepress-plugin-icons": "^0.12.2",
     "vitepress-plugin-jsfiddle": "^0.12.2",

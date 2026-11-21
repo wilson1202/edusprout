@@ -4,4 +4,12 @@ overrides:
 
 # 最小发布时间豁免列表
 minimumReleaseAgeExclude:
+  - 'vitepress'
+  - 'vitepress-plugin-*'
   - 'vitepress-plugin-filelist'
+  - 'vitepress-sidebar'
+  - 'vitepress-tuck'
+  - '@vitepress/*'
+  - '@pengzhanbo/*'
+  - 'vue'
+  - '@vue/*'

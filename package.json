@@ -9,6 +9,7 @@
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs",
+    "docs:update": "pnpm dlx taze major -w --force && pnpm install",
     "notices:organize": "node scripts/organize-notices.mjs",
     "notices:test": "node --test scripts/organize-notices.test.mjs"
   },
@@ -22,11 +23,11 @@
       "onFail": "download"
     }
   },
-  "packageManager": "pnpm@12.18.0",
+  "packageManager": "pnpm@12.21.0",
   "type": "module",
   "devDependencies": {
     "@floating-ui/vue": "^2.0.1",
-    "@iconify/json": "^2.2.554",
+    "@iconify/json": "^2.2.559",
     "@pengzhanbo/utils": "^3.12.0",
     "@stackblitz/sdk": "^1.11.1",
     "@types/node": "^26.6.6",
@@ -47,11 +48,11 @@
     "vitepress-plugin-collapse": "^0.12.2",
     "vitepress-plugin-field": "^0.12.2",
     "vitepress-plugin-file-tree": "^0.12.2",
-    "vitepress-plugin-filelist": "^0.13.7",
-    "vitepress-plugin-group-icons": "^1.8.1",
+    "vitepress-plugin-filelist": "^0.15.3",
+    "vitepress-plugin-group-icons": "^1.8.2",
     "vitepress-plugin-icons": "^0.12.2",
     "vitepress-plugin-jsfiddle": "^0.12.2",
-    "vitepress-plugin-llms": "^1.14.0",
+    "vitepress-plugin-llms": "^1.15.0",
     "vitepress-plugin-mark": "^0.12.2",
     "vitepress-plugin-mermaid-tuck": "^0.12.2",
     "vitepress-plugin-npm-to": "^0.12.2",
